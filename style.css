@@ -4,6 +4,15 @@ html, body {
     padding: 0;
   }
 
+
+h4{
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	font-style:italic;
+}
+
 body,p{
     position:relative;
 	display:flex;
@@ -52,7 +61,21 @@ a {
 	font-weight: 700;
 }
 
+.price-container {
+	display:flex;
+	flex-direction:row;
+	
+}
+.prev-price {
+	margin-right: 20px;
+	color:gray;
+	text-decoration-line:line-through;
+}
 /*****/
+
+#img-silmarillion {
+	width:50%;
+}
 
 #img-1984{
 	height:100%;
