@@ -85,6 +85,27 @@ function setUpCategories() {
 document.addEventListener("DOMContentLoaded", (event) => {
     const anchor = document.getElementById("items");
 
+
+    const filterHeader = document.getElementById("filter-header");
+    const filterContainer = document.getElementById("filter-container");
+    const filterChevron = document.getElementById("filter-arrow");
+    let filterClosed = true;
+    filterHeader.onclick = function(){
+        filterClosed = !filterClosed;
+        console.log(filterClosed);
+        if(filterClosed){
+            filterContainer.classList.add("closed");
+            filterChevron.classList.add("closed");
+        } else {
+            if(filterContainer.classList.contains("closed")){
+                filterContainer.classList.remove("closed");
+            }
+            if(filterChevron.classList.contains("closed")){
+                filterChevron.classList.remove("closed");
+            }
+        }
+    };
+
     let count = 0;
     items.forEach(item => {
         let img = document.createElement("img");
@@ -176,5 +197,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
     });
+
+
 
 });
