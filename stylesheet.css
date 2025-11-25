@@ -107,7 +107,7 @@ a {
 	font-weight: 700;
 }
 
-.items {
+#items {
   flex-direction: column;
   display: flex;
   justify-content: center;
