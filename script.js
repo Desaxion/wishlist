@@ -37,8 +37,8 @@ const items =
         "https://res.cloudinary.com/dxxvmvvyj/image/upload/t_ahlens-transformations-bg-removed/c_pad,w_1170,h_1690/f_auto/q_auto/v1/products/bg_removed/65/83/29/65832916_1.jpg?_a=BAVAZGID0",
         true,
         "Leksaker",
-        "299”,
-        ”225”
+        "299",
+        "225"
     ],
    [
         "MacKenzie Step Blade Guard Skridskoskydd",
@@ -47,16 +47,16 @@ const items =
         "https://www.xxl.se/filespin/de081a09fceb4ebf8d7ff53c380d79eb?quality=75&bgcolor=efefef&resize=1200%2C1200",
         true,
         "Hockey",
-        "119”
+        "119"
     ],
     [
-   "Bidrag till Stadsmissionen",
+        "Bidrag till Stadsmissionen",
         "Vissa har det inte lika bra som vi, därför får ni gärna ge ett bidrag till Göteborgs Stadsmission så att lite julglädje kan spridas till de som inte har råd med det själva.",
         "https://www.stadsmissionen.org/ge-stod/ge-direkt/",
-        ”https://www.stadsmissionen.org/app/uploads/Utvald_bild_ny-logga-750-%C3%97-400-px.png”,
+        "https://www.stadsmissionen.org/app/uploads/Utvald_bild_ny-logga-750-%C3%97-400-px.png",
         false,
         "Övrigt",
-        "Valfritt belopp”
+        "Valfritt belopp"
      ]
 ];
 
