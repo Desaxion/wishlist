@@ -34,7 +34,7 @@ body,p{
 	width: 70vw;
     display: flex;
     flex-direction:column;
-    justify-content: center;
+    align-items: center;
 }
 .image-frame{
 	overflow:hidden;
@@ -140,5 +140,8 @@ a {
   text-align: center;
 }
 #foot{
-	height: 400px;
+	height: 10rem;
+	background-color: black;
+	margin-top:4rem;
+	width:100vw;
 }
