@@ -12,7 +12,7 @@ const items =
     // Price
     // Sale price (opt)
 
-    [
+[
         "The Fall of Gondolin - J.R.R. Tolkien",
         "Bok av Tolkien. Historier om vad som händer tusentals år innan Sagan om Ringen.",
         "https://www.adlibris.com/sv/bok/fall-of-gondolin-9780008503970",
@@ -29,8 +29,36 @@ const items =
         false,
         "Kläder",
         "149"
-    ]
-]
+    ],
+    [
+        "Lego Nissan Skyline GT-R",
+        "Cool legobil som jag länge velat ha, från filmen Fast & Furious.",
+        "https://www.ahlens.se/produkter/barn/speed-champions-fast-furious-nissan-skyline-gt-r-r34-76917-a042b031-3368-47b3-a7ba-830d41636834?srsltid=AfmBOor0tpJ8kpLyptZAGQQw7em92iRAmSj4h3uYl8avhKWa3-PGYagOd0s",
+        "https://res.cloudinary.com/dxxvmvvyj/image/upload/t_ahlens-transformations-bg-removed/c_pad,w_1170,h_1690/f_auto/q_auto/v1/products/bg_removed/65/83/29/65832916_1.jpg?_a=BAVAZGID0",
+        true,
+        "Leksaker",
+        "299”,
+        ”225”
+    ],
+   [
+        "MacKenzie Step Blade Guard Skridskoskydd",
+        "Ordentliga skridskoskydd som går att gå i. Smidigare att använda än de skydd jag har på mina skridskor nu.",
+        "https://www.xxl.se/mackenzie-step-blade-guard-24-25-skridskoskydd-vit/p/1233021_1_Style",
+        "https://www.xxl.se/filespin/de081a09fceb4ebf8d7ff53c380d79eb?quality=75&bgcolor=efefef&resize=1200%2C1200",
+        true,
+        "Hockey",
+        "119”
+    ],
+    [
+   "Bidrag till Stadsmissionen",
+        "Vissa har det inte lika bra som vi, därför får ni gärna ge ett bidrag till Göteborgs Stadsmission så att lite julglädje kan spridas till de som inte har råd med det själva.",
+        "https://www.stadsmissionen.org/ge-stod/ge-direkt/",
+        ”https://www.stadsmissionen.org/app/uploads/Utvald_bild_ny-logga-750-%C3%97-400-px.png”,
+        false,
+        "Övrigt",
+        "Valfritt belopp”
+     ]
+];
 
 
 
