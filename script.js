@@ -1,6 +1,8 @@
 
 const BASE = 140; // Base color multiplier for categories
 
+let categories = {};
+
 const items = 
 [
     // Title
@@ -60,19 +62,37 @@ const items =
      ]
 ];
 
+function filterCategories(cat){
+    console.log(cat)
+}
 
+function setUpCategories() {
+    const categoryAnchor = document.getElementById("categories")
+    for (const [key, value] of Object.entries(categories)) {
+        let categoryElement = document.createElement('div');
+        categoryElement.textContent = key.toString()[0].toUpperCase() + key.toString().slice(1,key.toString().length);
+        categoryElement.classList.add("category");
+        categoryElement.classList.add("highish-weight");
+        categoryElement.classList.add("category-" + key);
+        categoryElement.style.backgroundColor = categories[key].toString();
+        categoryAnchor.append(categoryElement);
+        categoryElement.addEventListener('click', function(){filterCategories(key)});
+
+        
+    }
+}
 
 document.addEventListener("DOMContentLoaded", (event) => {
     const anchor = document.getElementById("items");
 
-    let categories = {};
-
+    let count = 0;
     items.forEach(item => {
         let img = document.createElement("img");
         img.src = item[3];
         img.onload = function() {
             let itemDiv = document.createElement('div');
             itemDiv.classList.add("item");
+            itemDiv.classList.add("category-" + item[5].toLowerCase());
 
             let imageFrame = document.createElement('div');
             imageFrame.classList.add("image-frame");
@@ -101,7 +121,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
             if (item.length > 7){
                 let salePrice = document.createElement("h3");
-                salePrice.textContent = item[7] + " kr";
+                salePrice.textContent = item[7] + " kr"; // Maybe add regex to filter numbers
                 salePrice.classList.add("sale-price")
                 price.classList.add("old-price");
                 priceDiv.append(salePrice);
@@ -133,14 +153,28 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
             let category = document.createElement("div");
             category.classList.add("item-category");
-            // Calculate categories
-            categories[item[5]] ??= [ BASE*Math.random(), BASE*Math.random(), BASE*Math.random()]
-            itemDiv.append(buttonDiv);
+
+            let key = item[5].toLowerCase();
+            if(!(key in categories)){
+                categories[key] = "rgb(" + BASE*Math.random()+ "," + BASE*Math.random()+ "," + BASE*Math.random() + ")";
+            }
+                
             
+            let tinyCategory = document.createElement("div");
+            tinyCategory.classList.add("tiny-category");
+            tinyCategory.textContent = key.toString()[0].toUpperCase() + key.toString().slice(1,key.toString().length);
+            tinyCategory.style.backgroundColor = categories[key].toString();
+
+            itemDiv.append(buttonDiv);
+            itemDiv.append(tinyCategory);
             
             anchor.append(itemDiv);
+            if(++count == items.length){
+                setUpCategories();
+            }
         }
 
 
     });
+
 });
