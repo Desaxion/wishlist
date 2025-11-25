@@ -1,0 +1,136 @@
+
+/*.mona-sans-<uniquifier> {
+  font-family: "Mona Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+*/
+
+html, body {
+    font-family: "Mona Sans", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+  }
+
+
+body,p{
+    position:relative;
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+}
+
+#title{
+	font-weight:700;
+  text-align: center;
+    font-size: 1.7rem;
+}
+
+#content{
+	width: 70vw;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.image-frame{
+	overflow:hidden;
+	height:50vw;
+	display:flex;
+	justify-content:center;
+}
+
+.old-price {
+    color:gray;
+    text-decoration-line: line-through;
+    text-decoration-thickness: 0.2rem;
+}
+
+.sale-price {
+    color: rgb(95, 24, 24);
+    margin-right: 1rem;
+}
+
+.price-container {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+.smaller-text {
+    font-size: 0.5rem;
+}
+
+.small-text {
+    font-size: 0.7rem;
+}
+
+.smallish-text {
+    font-size: 0.8rem;
+}
+
+.button-container {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+.buy-button {
+    text-decoration: none;
+
+}
+
+.buy-button-content {
+    color:white;
+    background-color: black;
+    padding: 0.7rem;
+    margin-right: 0.5rem;
+    border-radius: 2rem;
+    cursor:pointer;
+    border:0.2rem solid black;
+    transition: 0.1s ease;
+}
+
+
+.buy-button:hover .buy-button-content {
+    background-color: white;
+    color:black;
+}
+
+.desc{
+	margin-bottom: 15px;
+}
+a {
+	font-weight: 700;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.lower-weight {
+    font-weight:300;
+}
+
+.low-weight {
+    font-weight:500;
+}
+
+.italic {
+    font-style:italic;
+}
+.center {
+  text-align: center;
+}
+#foot{
+	height: 400px;
+}

@@ -4,88 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johans Önskelista</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" href="paw.svg">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script src="script.js"></script> 
 </head>
 <body>
   <div id="content">
 	
 	<h1 id="title">
-		Önskelista
+		Johans Önskelista
 	</h1>
-  <h4>Sakerna på listan står ej i någon särskild ordning</h4>
-	<p>2024</p>
-  
-  
-  <!---->
-  <div class="item">
-  <div class="item-img-frame">
-  <img class="item-img" id="img-silmarillion" src="2238.jpg"></img>
-  </div>
-	<h3>
-		The Silmarillion - J.R.R. Tolkien (Pocket)
-	</h3>
-	<h5 class="price">129 kr</h5>
-	<div class="desc">Bok av Tolkien. Historien om vad som händer tusentals år innan Sagan om Ringen.</div>
-	
-	<a href="https://www.adlibris.com/se/bok/silmarillion-9780261102736">Köp här</a> (eller i butik)
-  </div>   
-   <!---->
-  <div class="item">
-    <div class="item-img-frame">
-    <img class="item-img" id="img-stadsmission"src="gbgstads.png"></img>
-    </div>
-    <h3>
-      Bidrag till Göteborgs Stadsmission
-    </h3>
-    <h5 class="price">Valfritt belopp</h5>
-    <div class="desc">Alla har det inte lika bra som vi. Swisha en valfi summa till Göteborgs Stadsmission för att hjälpa de i vår stad som inte har någonstans eller någon att fira jul med.</div>
-    <a href="    https://www.stadsmissionen.org/for-att-du-kan/">Swisha här</a> (Klicka på länken och välj sedan "Swisha en gåva")
-    </div>
-
-      <!---->
-      <div class="item">
-        <div class="item-img-frame">
-        <img class="item-img" id="img-lego-nissan"src="legonissan.jpg"></img>
-        </div>
-        <h3>
-          Lego Nissan Skyline GT-R
-        </h3>
-        <div class="price-container">
-          <h5 class="prev-price">279 kr</h5>
-          <h5 class="price">189 kr </h5>
-        </div>
-        <div class="desc">En riktigt cool Legobil ur samma serie som mina andra coola bilar.</div>
-    <a href="https://www.webhallen.com/se/product/352043-LEGO-Speed-Champions-2-Fast-2-Furious-Nissan-Skyline-GT-R-R34-76917">Köp här</a> (eller i butik, finns på fler ställen än webhallen också)
-        
-        </div>
-        <!---->
-  <div class="item">
-    <div class="item-img-frame">
-    <img class="item-img" id="img-borg"src="borg.avif"></img>
-    </div>
-    <h3>
-      Borg Träningströja - Night Sky Blue (S)
-    </h3>
-    <h5 class="price">299 kr</h5>
-    <div class="desc">Marinblå T-shirt i funktionmaterial från Borg. Storlek S.</div>
-    
-    <a href="https://www.bjornborg.com/se/borg-t-shirt-9999-1140-na019/">Köp här</a>
-    </div>
-            <!---->
-  <div class="item">
-    <div class="item-img-frame">
-    <img class="item-img" id="img-saluhall"src="saluhall.jpg"></img>
-    </div>
-    <h3>
-      Presentkort på Stora Saluhallen
-    </h3>
-    <h5 class="price">300 kr</h5>
-    <div class="desc">Presentkort på saluhallen så att man kan välja en valfri delikatess!</div>
-    
-    <a href="https://giftcardweb.se/shoppingcenter/stora-saluhallen">Köp här</a> (eller från automat på Saluhallen)
-    </div>
+  <h4 class="low-weight center">Sakerna på listan står ej i någon särskild ordning</h4>
+	<p>2025</p>
+ 
+  <div id="items"></div>
 
   <div id="foot"></div>
 </body>
