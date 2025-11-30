@@ -3,6 +3,10 @@ const BASE = 140; // Base color multiplier for categories
 
 let categories = {};
 
+let activeCategories = [];
+
+const xmark = '<svg xmlns="http://www.w3.org/2000/svg" class="category-x" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"/></svg>'
+
 const items = 
 [
     // Title
@@ -63,7 +67,68 @@ const items =
 ];
 
 function filterCategories(cat){
-    console.log(cat)
+    let a = document.getElementById("active-categories");
+    let i = document.getElementById("items");
+    let items = i.querySelectorAll(".item");
+
+    items.forEach(item => {
+        isActive = false;
+        for(let x = 0; x < activeCategories.length; x++){
+            if(item.classList.contains(activeCategories[x])){
+                item.style.display = 'flex';
+                isActive = true;
+                break;
+            } 
+        }
+        if(!isActive){
+            item.style.display = "none";
+        }
+        if(activeCategories.length == 0){
+            item.style.display = "flex";
+        }
+    })
+
+    if(activeCategories.length > 0){
+        a.style.padding = "0.5rem";
+    } else {
+        a.style.padding = "0rem"
+    }
+}
+
+function removeCategory(cat, element){
+    let c = document.getElementById("categories");
+    activeCategories.splice(activeCategories.indexOf("category-" + cat),1);
+    let newlyAddedCategory = document.createElement("div");
+    newlyAddedCategory.innerHTML = element.innerText;
+    newlyAddedCategory.classList.add("category");
+    newlyAddedCategory.classList.add("highish-weight");
+    newlyAddedCategory.classList.add("category-" + cat);
+    newlyAddedCategory.style.backgroundColor = categories[cat].toString();
+    newlyAddedCategory.addEventListener('click', function(){addCategory(cat,newlyAddedCategory)})
+    c.append(newlyAddedCategory);
+    element.remove()
+    filterCategories();
+}
+
+function addCategory(cat,element){
+    let a = document.getElementById("active-categories");
+
+
+    let newlyAddedCategory = document.createElement("div");
+    newlyAddedCategory.innerHTML = element.innerText + xmark ;
+    newlyAddedCategory.classList.add("category");
+    newlyAddedCategory.classList.add("highish-weight");
+    newlyAddedCategory.classList.add("category-" + cat);
+    newlyAddedCategory.style.backgroundColor = categories[cat].toString();
+    a.append(newlyAddedCategory);
+    activeCategories.push("category-" + cat);
+
+    element.remove()
+    
+    newlyAddedCategory.addEventListener('click', function(){removeCategory(cat,newlyAddedCategory)})
+
+    // Add eventlistener to the active category
+    filterCategories()
 }
 
 function setUpCategories() {
@@ -76,7 +141,7 @@ function setUpCategories() {
         categoryElement.classList.add("category-" + key);
         categoryElement.style.backgroundColor = categories[key].toString();
         categoryAnchor.append(categoryElement);
-        categoryElement.addEventListener('click', function(){filterCategories(key)});
+        categoryElement.addEventListener('click', function(){addCategory(key,categoryElement)});
 
         
     }
