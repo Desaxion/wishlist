@@ -66,7 +66,7 @@ const allItems =
             "Valfritt belopp"
         ]
     ],
-    "Generell Julönskelista",
+    "Julönskelista",
     [
         [
             "Vi och dom - Bengt Jangefeldt",
@@ -111,12 +111,22 @@ function filterCategories(cat){
 
 
 function setSelectedPage(id) {
+    //console.log(id)
+    let hrefCut = window.location.href.split("?=");
+    if(hrefCut.length > 1 && hrefCut[1] != id){
+        window.history.pushState({},"","?=" + id);
+    } else if(hrefCut.length < 2 ){
+        window.history.pushState({},"","?=" + id);
+    }
+
+
     let allPages = document.querySelectorAll(".page");
     let titles = document.querySelectorAll(".page-title");
     //selected = document.getElementById(id);
     for(let i = 0; i < allPages.length; i++){
         //console.log(allPages[i].querySelector(".item").id)
-        //console.log(allPages[i].id);
+        //console.log(allPages[i].id != id);
+
         if(allPages[i].id != id){
             if(allPages[i].classList.contains("selected")){
                 allPages[i].classList.remove("selected");
@@ -162,6 +172,8 @@ function addCategory(cat,element){
 
     element.remove()
     
+    let pages = 
+
     newlyAddedCategory.addEventListener('click', function(){removeCategory(cat,newlyAddedCategory)})
 
     // Add eventlistener to the active category
@@ -297,7 +309,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
             let key = item[5].toLowerCase();
             if(!(key in categories)){
-                console.log(key)
+                //console.log(key)
                 categories[key] = "rgb(" + BASE*Math.random()+ "," + BASE*Math.random()+ "," + BASE*Math.random() + ")";
             }
                 
@@ -320,10 +332,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     page.append(anchor);
     pages.append(page);
-    console.log(pages)
     if(k==0){
+
         requestAnimationFrame(()=>{
-            setSelectedPage(allItems[0]);
+            let hrefCut = window.location.href.split("?=");
+            if(hrefCut.length < 2){
+                setSelectedPage(allItems[0]);
+            } else {
+                setSelectedPage(decodeURI(hrefCut[1]));
+            }
+
         });
     }
 };
