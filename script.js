@@ -43,7 +43,7 @@ const allItems =
             "https://www.ahlens.se/produkter/barn/speed-champions-fast-furious-nissan-skyline-gt-r-r34-76917-a042b031-3368-47b3-a7ba-830d41636834?srsltid=AfmBOor0tpJ8kpLyptZAGQQw7em92iRAmSj4h3uYl8avhKWa3-PGYagOd0s",
             "https://res.cloudinary.com/dxxvmvvyj/image/upload/t_ahlens-transformations-bg-removed/c_pad,w_1170,h_1690/f_auto/q_auto/v1/products/bg_removed/65/83/29/65832916_1.jpg?_a=BAVAZGID0",
             true,
-            "Leksaker",
+            "Prylar",
             "299",
             "225"
         ],
@@ -76,8 +76,47 @@ const allItems =
             true,
             "Böcker",
             "216"
-        ]
+        ],
+        [
+            "Kaffekvarn - Modern House",
+            "En kaffekvarn att mala kaffebönor i, för ett färskare kaffe på morgonen! Man måste såklart inte mala allt kaffe här, men kan vara kul att testa!",
+            "https://www.cervera.se/produkt/modern-house-lundi-kaffekvarn-12-cm?gad_source=1&gad_campaignid=21180807259&gclid=CjwKCAiA3L_JBhAlEiwAlcWO53Ciosrlm79r7quHdlL-6w_eFcgbjpgddJUOT3n3fkI_bM_X5d-C7BoCgh8QAvD_BwE",
+            "https://cervera.cdn-norce.tech/7a4a4d43-8fd1-493e-8697-f5ada610e761.jpeg?mode=Pad&quality=75&format=webp&width=640&height=640",
+            true,
+            "Prylar",
+            "499",
+            "299"
+        ],
+        [
+            "D'Addario Phosphor Bronze EJ16 12-53 Gitarrsträngar",
+            "Stålsträngar för min gitarr med en varm och klar ton.",
+            "https://www.mug.se/collections/alla-akustiska-strangar/products/ej16-12-53-phosphor-bronze",
+            "https://www.mug.se/cdn/shop/files/preview2_1024x1024@2x.jpg?v=1764702511",
+            true,
+            "Prylar",
+            "139",
+        ],
+        [
+            "Patagonia Retro Fleece Väst",
+            "Fleeceväst från patagonia, helst i färgen New Navy w/ Sunken Blue",
+            "https://eu.patagonia.com/se/en/product/mens-retro-pile-fleece-vest/22821.html?dwvar_22821_color=NNSU&_gl=1*kz9bzs*_up*MQ..*_gs*MQ..&gclid=CjwKCAiA3L_JBhAlEiwAlcWO58_jDibWAciQKaKiSou5AFR9Tfuyo1tmD8PQzjTHBkZn_-5nBLnl7RoCY7AQAvD_BwE&gclsrc=aw.ds",
+            "https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw4af74f70/images/hi-res/22821_NNSU.jpg?sw=1400&sh=1400&sfrm=png&q=90&bgcolor=f3f4ef",
+            false,
+            "Kläder",
+            "1399",
+        ],
+        [
+            "Secret Hitler",
+            "Ett brädspel som går ut på att i hemlighet rösta igenom sina egna polycier, och hindra fascisterna från att få igenom sin politik.",
+            "https://www.webhallen.com/se/product/358442-Secret-Hitler-Eng?utm_source=google&utm_medium=cpc&utm_campaign=Pmax%20%7C%20Price_Under_3000&gad_source=1&gad_campaignid=21025599808&gclid=CjwKCAiA3L_JBhAlEiwAlcWO5_Is7a8T3_wKbLMJSW-jia2AiM1RskkGGgnyfXVHuzLR0pi0AMRvTRoCJZ8QAvD_BwE",
+            "https://www.webhallen.com/images/screenshot/252802?trim",
+            true,
+            "Prylar",
+            "false",
+        ],
+        
     ]
+    
 ];
 
 function filterCategories(cat){
