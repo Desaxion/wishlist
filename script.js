@@ -112,7 +112,7 @@ const allItems =
             "https://www.webhallen.com/images/screenshot/252802?trim",
             true,
             "Prylar",
-            "false",
+            "699",
         ],
         
     ]
