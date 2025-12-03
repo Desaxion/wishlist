@@ -149,6 +149,18 @@ body,p{
     font-size: 0.8rem;
 }
 
+.largeish-text {
+    font-size: 1.2rem;
+}
+
+.large-text {
+    font-size: 1.5rem;
+}
+
+.large-text {
+    font-size: 1.7rem;
+}
+
 .button-container {
     display:flex;
     flex-direction:row;
@@ -184,10 +196,14 @@ a {
 	font-weight: 700;
 }
 
-#items {
+.page.selected .items {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.items {
+    display:none;
 }
 
 .item{
@@ -201,6 +217,27 @@ a {
     margin: 0.5rem;
 	width:20rem;
 }
+#pages-titles{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+.page-title{
+    width:fit-content;
+    padding:0.5rem;
+    margin:0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+    cursor:pointer;
+    transition: 0.2s ease;
+}
+.page-title:hover{
+    border: 1px solid lightgray;
+}
+.page-title.selected{
+    background-color:lightgray;
+}
+
 
 .lower-weight {
     font-weight:300;
