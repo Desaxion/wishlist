@@ -117,7 +117,7 @@ const allItems =
         [
 ”Bidrag till hockeyutrustning”,
 ”Jag vill gärna köpa egna hockeybyxor/damasker/klubba/axelskydd, men detta kan kosta en del. Önskar mig därför ett bidrag till utrustning. Länken nedan leder inte till något.”,
-window.location.href,
+"",
 ”https://www.foretagshockey.com/wp-content/uploads/2020/09/is-hockey-utrustning.jpg”,
 false,
 ”Hockey”,
