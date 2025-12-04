@@ -114,7 +114,24 @@ const allItems =
             "Prylar",
             "699",
         ],
-        
+        [
+”Bidrag till hockeyutrustning”,
+”Jag vill gärna köpa egna hockeybyxor/damasker/klubba/axelskydd, men detta kan kosta en del. Önskar mig därför ett bidrag till utrustning. Länken nedan leder inte till något.”,
+window.location.href,
+”https://www.foretagshockey.com/wp-content/uploads/2020/09/is-hockey-utrustning.jpg”,
+false,
+”Hockey”,
+”Valfritt belopp”
+],
+[
+”JAS 39 Gripen A modellbyggsats”,
+”En byggsats för en plastmodell av JAS Gripen, mysigt att pyssla med på jullovet!”,
+”https://leksaksbilar.se/sv/products/jas-39-a-gripen-plastbyggsats-2638-italeri-148?gad_source=1&gad_campaignid=19688127772&gclid=Cj0KCQiA_8TJBhDNARIsAPX5qxSUzGcpcBsJZuOGB333HE9R3d9FbFfTsdb2jOXIbA8xa4lyp3gOW24aApQ5EALw_wcB”,
+”https://d3dnwnveix5428.cloudfront.net/eyJrZXkiOiJzdG9yZV9mNmVlMWY5ZS03Zjc0LTQwYWQtODg3MC03YmVhMjA2ODE1MTBcL2ltYWdlc1wvaDZrNDNmRnd0a3FCVXBJckxlOGNBTXJiMHl3TEZHaXdUTkxhN0t2Vi53ZWJwIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDI0LCJoZWlnaHQiOjEwMjQsImZpdCI6Imluc2lkZSJ9fX0=”,
+false,
+”Prylar”,
+”349”
+]
     ]
     
 ];
