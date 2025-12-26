@@ -9,74 +9,8 @@ const xmark = '<svg xmlns="http://www.w3.org/2000/svg" class="category-x" viewBo
 
 const allItems = 
 [    
-    "Secret Santa",
+    "Önskelista",
     [
-        // Title
-        // Desc
-        // Link
-        // Image
-        // avaliableInStore
-        // Category
-        // Price
-        // Sale price (opt)
-    [
-            "The Fall of Gondolin - J.R.R. Tolkien",
-            "Bok av Tolkien. Historier om vad som händer tusentals år innan Sagan om Ringen.",
-            "https://www.adlibris.com/sv/bok/fall-of-gondolin-9780008503970",
-            "https://www.adlibris.com/images/9780008503970/fall-of-gondolin.jpg",
-            true,
-            "Böcker",
-            "114"
-        ],
-        [
-            "Strumpor - Tre Kronor",
-            "Strumpor för spel både på hemma och bortaplan med världens bästa hockeylag.",
-            "https://trekronorshop.se/accessoarer-vrigt/96092-2-pack-socks-tre-kronor-home-away-yellow-navy",
-            "https://images.neh.com/upload/test//high/TRE2535.jpg?v=1277557823",
-            false,
-            "Kläder",
-            "149"
-        ],
-        [
-            "Lego Nissan Skyline GT-R",
-            "Cool legobil som jag länge velat ha, från filmen Fast & Furious.",
-            "https://www.ahlens.se/produkter/barn/speed-champions-fast-furious-nissan-skyline-gt-r-r34-76917-a042b031-3368-47b3-a7ba-830d41636834?srsltid=AfmBOor0tpJ8kpLyptZAGQQw7em92iRAmSj4h3uYl8avhKWa3-PGYagOd0s",
-            "https://res.cloudinary.com/dxxvmvvyj/image/upload/t_ahlens-transformations-bg-removed/c_pad,w_1170,h_1690/f_auto/q_auto/v1/products/bg_removed/65/83/29/65832916_1.jpg?_a=BAVAZGID0",
-            true,
-            "Prylar",
-            "299",
-            "225"
-        ],
-    [
-            "MacKenzie Step Blade Guard Skridskoskydd",
-            "Ordentliga skridskoskydd som går att gå i. Smidigare att använda än de skydd jag har på mina skridskor nu.",
-            "https://www.xxl.se/mackenzie-step-blade-guard-24-25-skridskoskydd-vit/p/1233021_1_Style",
-            "https://www.xxl.se/filespin/de081a09fceb4ebf8d7ff53c380d79eb?quality=75&bgcolor=efefef&resize=1200%2C1200",
-            true,
-            "Hockey",
-            "119"
-        ],
-        [
-            "Bidrag till Stadsmissionen",
-            "Vissa har det inte lika bra som vi, därför får ni gärna ge ett bidrag till Göteborgs Stadsmission så att lite julglädje kan spridas till de som inte har råd med det själva.",
-            "https://www.stadsmissionen.org/ge-stod/ge-direkt/",
-            "https://www.stadsmissionen.org/app/uploads/Utvald_bild_ny-logga-750-%C3%97-400-px.png",
-            false,
-            "Övrigt",
-            "Valfritt belopp"
-        ]
-    ],
-    "Julönskelista",
-    [
-        [
-            "Vi och dom - Bengt Jangefeldt",
-            "En bok som beskriver det geopolitiska läget utifrån ett ryskt perspektiv, för att lättare sätta deras beslut och handlingar i ett sammanhang.",
-            "https://www.adlibris.com/sv/bok/vi-och-dom-bengt-jangfeldt-om-ryssland-som-ide-9789146240327",
-            "https://www.adlibris.com/images/9789146240327/vi-och-dom-bengt-jangfeldt-om-ryssland-som-ide.jpg",
-            true,
-            "Böcker",
-            "216"
-        ],
         [
             "Kaffekvarn - Modern House",
             "En kaffekvarn att mala kaffebönor i, för ett färskare kaffe på morgonen! Man måste såklart inte mala allt kaffe här, men kan vara kul att testa!",
@@ -86,15 +20,6 @@ const allItems =
             "Prylar",
             "499",
             "299"
-        ],
-        [
-            "D'Addario Phosphor Bronze EJ16 12-53 Gitarrsträngar",
-            "Stålsträngar för min gitarr med en varm och klar ton.",
-            "https://www.mug.se/collections/alla-akustiska-strangar/products/ej16-12-53-phosphor-bronze",
-            "https://www.mug.se/cdn/shop/files/preview2_1024x1024@2x.jpg?v=1764702511",
-            true,
-            "Prylar",
-            "139",
         ],
         [
             "Patagonia Retro Fleece Väst",
@@ -113,6 +38,16 @@ const allItems =
             true,
             "Prylar",
             "699",
+        ],
+        [
+            "Lego Nissan Skyline GT-R",
+            "Cool legobil som jag länge velat ha, från filmen Fast & Furious.",
+            "https://www.ahlens.se/produkter/barn/speed-champions-fast-furious-nissan-skyline-gt-r-r34-76917-a042b031-3368-47b3-a7ba-830d41636834?srsltid=AfmBOor0tpJ8kpLyptZAGQQw7em92iRAmSj4h3uYl8avhKWa3-PGYagOd0s",
+            "https://res.cloudinary.com/dxxvmvvyj/image/upload/t_ahlens-transformations-bg-removed/c_pad,w_1170,h_1690/f_auto/q_auto/v1/products/bg_removed/65/83/29/65832916_1.jpg?_a=BAVAZGID0",
+            true,
+            "Prylar",
+            "299",
+            "225"
         ],
         
     ]
