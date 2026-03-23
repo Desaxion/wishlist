@@ -7,37 +7,19 @@ let activeCategories = [];
 
 const xmark = '<svg xmlns="http://www.w3.org/2000/svg" class="category-x" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"/></svg>'
 
-const allItems = 
-[    
+const allItems =
+[
     "Önskelista",
     [
         [
-            "Kaffekvarn - Modern House",
-            "En kaffekvarn att mala kaffebönor i, för ett färskare kaffe på morgonen! Man måste såklart inte mala allt kaffe här, men kan vara kul att testa!",
-            "https://www.cervera.se/produkt/modern-house-lundi-kaffekvarn-12-cm?gad_source=1&gad_campaignid=21180807259&gclid=CjwKCAiA3L_JBhAlEiwAlcWO53Ciosrlm79r7quHdlL-6w_eFcgbjpgddJUOT3n3fkI_bM_X5d-C7BoCgh8QAvD_BwE",
-            "https://cervera.cdn-norce.tech/7a4a4d43-8fd1-493e-8697-f5ada610e761.jpeg?mode=Pad&quality=75&format=webp&width=640&height=640",
+            "Marinblå half zip tröja",
+            "Fin tröja att ha hemma och på jobb! Gärna storlek S.",
+            "https://johnhenric.com/se/navy-blue-half-zip-sweater-regular-fit-a03154-06?gad_source=1&gad_campaignid=20989013020&gclid=CjwKCAjwyYPOBhBxEiwAgpT8P4AYadEgmvGt6RVqu9upMOsu5Xo4yJuRvTZX0P0aMOHy4RG8G7Ll1xoCjooQAvD_BwE",
+            "https://imgproxy.johnhenric.com/preset:sharp/resize:fit:1250/gravity:nowe/quality:80/aHR0cHM6Ly9qb2huaGVucmljLmNlbnRyYWNkbi5uZXQvY2xpZW50L2R5bmFtaWMvaW1hZ2VzLzM0NTdfMTI5NTRlOGVjNi1hMDMxNTQtMDYtNi1vcmlnaW5hbC5qcGc=",
             true,
-            "Prylar",
-            "499",
-            "299"
-        ],
-        [
-            "Patagonia Retro Fleece Väst",
-            "Fleeceväst från patagonia, helst i färgen New Navy w/ Sunken Blue",
-            "https://eu.patagonia.com/se/en/product/mens-retro-pile-fleece-vest/22821.html?dwvar_22821_color=NNSU&_gl=1*kz9bzs*_up*MQ..*_gs*MQ..&gclid=CjwKCAiA3L_JBhAlEiwAlcWO58_jDibWAciQKaKiSou5AFR9Tfuyo1tmD8PQzjTHBkZn_-5nBLnl7RoCY7AQAvD_BwE&gclsrc=aw.ds",
-            "https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw4af74f70/images/hi-res/22821_NNSU.jpg?sw=1400&sh=1400&sfrm=png&q=90&bgcolor=f3f4ef",
-            false,
             "Kläder",
-            "1399",
-        ],
-        [
-            "Secret Hitler",
-            "Ett brädspel som går ut på att i hemlighet rösta igenom sina egna polycier, och hindra fascisterna från att få igenom sin politik.",
-            "https://www.webhallen.com/se/product/358442-Secret-Hitler-Eng?utm_source=google&utm_medium=cpc&utm_campaign=Pmax%20%7C%20Price_Under_3000&gad_source=1&gad_campaignid=21025599808&gclid=CjwKCAiA3L_JBhAlEiwAlcWO5_Is7a8T3_wKbLMJSW-jia2AiM1RskkGGgnyfXVHuzLR0pi0AMRvTRoCJZ8QAvD_BwE",
-            "https://www.webhallen.com/images/screenshot/252802?trim",
-            true,
-            "Prylar",
-            "699",
+            "899"
+
         ],
         [
             "Lego Nissan Skyline GT-R",
@@ -49,29 +31,8 @@ const allItems =
             "299",
             "225"
         ],
-        
-  [
-    "Bidrag till hockeyutrustning",
-    "Jag vill gärna köpa egna hockeybyxor/damasker/klubba/axelskydd, men detta kan kosta en del. Önskar mig därför ett bidrag till utrustning. Länken nedan leder inte till något.",
-    window.location.href,
-    "https://www.foretagshockey.com/wp-content/uploads/2020/09/is-hockey-utrustning.jpg",
-    false,
-    "Hockey",
-    "Valfritt belopp"
-  ],
-  [
-    "JAS 39 Gripen A modellbyggsats",
-    "En byggsats för en plastmodell av JAS Gripen, mysigt att pyssla med på jullovet!",
-    "https://leksaksbilar.se/sv/products/jas-39-a-gripen-plastbyggsats-2638-italeri-148?gad_source=1&gad_campaignid=19688127772&gclid=Cj0KCQiA_8TJBhDNARIsAPX5qxSUzGcpcBsJZuOGB333HE9R3d9FbFfTsdb2jOXIbA8xa4lyp3gOW24aApQ5EALw_wcB",
-    "https://d3dnwnveix5428.cloudfront.net/eyJrZXkiOiJzdG9yZV9mNmVlMWY5ZS03Zjc0LTQwYWQtODg3MC03YmVhMjA2ODE1MTBcL2ltYWdlc1wvaDZrNDNmRnd0a3FCVXBJckxlOGNBTXJiMHl3TEZHaXdUTkxhN0t2Vi53ZWJwIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDI0LCJoZWlnaHQiOjEwMjQsImZpdCI6Imluc2lkZSJ9fX0=",
-    false,
-    "Prylar",
-    "349"
-  ]
-
-
     ]
-    
+
 ];
 
 function filterCategories(cat){
@@ -85,7 +46,7 @@ function filterCategories(cat){
                 item.style.display = 'flex';
                 isActive = true;
                 break;
-            } 
+            }
         }
         if(!isActive){
             item.style.display = "none";
@@ -165,8 +126,8 @@ function addCategory(cat,element){
     activeCategories.push("category-" + cat);
 
     element.remove()
-    
-    let pages = 
+
+    let pages =
 
     newlyAddedCategory.addEventListener('click', function(){removeCategory(cat,newlyAddedCategory)})
 
@@ -186,7 +147,7 @@ function setUpCategories() {
         categoryAnchor.append(categoryElement);
         categoryElement.addEventListener('click', function(){addCategory(key,categoryElement)});
 
-        
+
     }
 }
 
@@ -245,7 +206,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             imageFrame.classList.add("image-frame");
             imageFrame.append(img);
             itemDiv.append(imageFrame);
-            
+
 
             let title = document.createElement("h3");
             title.textContent = item[0];
@@ -264,7 +225,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             price.textContent = item[6] + " kr"
             price.classList.add("item-price");
 
-            
+
 
             if (item.length > 7){
                 let salePrice = document.createElement("h3");
@@ -273,7 +234,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 price.classList.add("old-price");
                 priceDiv.append(salePrice);
             }
-            
+
             priceDiv.append(price);
 
             itemDiv.append(priceDiv);
@@ -306,8 +267,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 //console.log(key)
                 categories[key] = "rgb(" + BASE*Math.random()+ "," + BASE*Math.random()+ "," + BASE*Math.random() + ")";
             }
-                
-            
+
+
             let tinyCategory = document.createElement("div");
             tinyCategory.classList.add("tiny-category");
             tinyCategory.textContent = key.toString()[0].toUpperCase() + key.toString().slice(1,key.toString().length);
@@ -315,7 +276,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
             itemDiv.append(buttonDiv);
             itemDiv.append(tinyCategory);
-            
+
             anchor.append(itemDiv);
 
             //console.log(i, items.length);
