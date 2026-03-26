@@ -31,6 +31,15 @@ const allItems =
             "299",
             "225"
         ],
+        [
+            "CCM Halsskydd",
+            "Halsskydd för hockeyspel.",
+            "https://www.xxl.se/ccm-pro-neck-guard-26-27-halsskydd-svart/p/1105049_1_Style?",
+            "https://cdn.xxl.se/filespin/8049fbdaf68a4066a84a9537062a735d?quality=75&bgcolor=efefef&resize=640%2C640",
+            true,
+            "Hockey",
+            "399",
+        ],
     ]
 
 ];
