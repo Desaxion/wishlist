@@ -40,6 +40,36 @@ const allItems =
             "Hockey",
             "399",
         ],
+        [
+            "Läslampa",
+            "Uppladdningsbar läslampa med klämfäste.",
+            "https://www.adlibris.com/sv/produkt/laslampa-uppladdningsbar-med-klamfaste-led-bla-47763251?article=P47763251",
+            "https://media.adlibris.com/images/d9ccb1b1-a00a-4171-9334-bc0cb9811ce4/laslampa-uppladdningsbar-med-klamfaste-led-bla.jpg?w=2048",
+            false,
+            "Prylar",
+            "199",
+        ],
+        [
+            "Fotogendriven stormlykta",
+            "Fotogendriven stormlykta för friluftsliv eller för ljus vid strömavbrott. Färg/märke spelar ingen roll så länge den är någorlunda rejäl! (Det behöver inte ens vara från denna specifika affären!)",
+            "https://www.bagarenochkocken.se/p/feuerhand-baby-special-276-fotogenlykta-zink_79397/",
+            "https://media.enad.io/20dccf88-6cf1-4912-a8a3-40dbcf6e8e0f/79397_1.jpg?width=1200",
+            false,
+            "Beredskap",
+            "449",
+            "499"
+        ],
+        [
+            "Vattendunkar 25L",
+            "25-litersdunkar för krisberedskap. Gärna 2 stycken! Spelar ingen roll vilket märke eller affär så länge de är rejäla!",
+            "https://www.bauhaus.se/vattendunk-25l?channable=06ff20696400313037313631303f&srsltid=AfmBOorobxGMtgnbQP9dRfnxrr2VJNLEUu2Ji7B2gaVnU3QC9mqiapvIS1Y",
+            "https://www.bauhaus.se/media/catalog/product/cache/3e7b8fe327b7b9553ccec016d3f9a411/4/6/46834573-6dbb-4961-9393-3789bcc706a4.jpg",
+            true,
+            "Beredskap",
+            "179",
+        ],
+
+
     ]
 
 ];
