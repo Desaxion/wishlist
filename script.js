@@ -88,7 +88,7 @@ const allItems =
             true,
             "Prylar",
             "229", 
-”183”
+"183"
         ],
 
 [
