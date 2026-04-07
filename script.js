@@ -56,8 +56,8 @@ const allItems =
             "https://media.enad.io/20dccf88-6cf1-4912-a8a3-40dbcf6e8e0f/79397_1.jpg?width=1200",
             false,
             "Beredskap",
-            "499",
-            "449"
+            "449",
+            "499"
         ],
         [
             "Vattendunkar 25L",
@@ -76,15 +76,26 @@ const allItems =
             "https://03.cdn37.se/3OL/images/2.609287/under-armour-keps-launch-adjustable.jpeg",
             false,
             "Kläder",
-            "349", 
-"209"
+            "209", 
+"349"
+        ],
+
+[
+            "Knivslip",
+            "En knivslip från Anders och Petter så att vi kan vässa våra köksknivar!",
+            "https://www.cervera.se/produkt/anders-petter-classic-knivslip-21x7-5-cm-svart-rostfritt-stal",
+            "https://cervera.cdn-norce.tech/798ea256-2370-4fbd-a075-a9aa17c5011b.jpeg?mode=Pad&quality=75&format=webp&width=496&height=496",
+            true,
+            "Prylar",
+            "229", 
+”183”
         ],
 
 [
             "Apple Pencil",
             "En penna till vår iPad så att man kan rita/skriva på ipaden, passar bra för digitala teckningar och anteckningar. Länken leder till en begagnad variant.",
             "https://www.refurbed.se/p/apple-pencil-2-gen/?co=se&lang=sv&utm_cluster=gradeA&utm_content=apple-pencil-2-gen&utm_group=apple-pencil-2-gen&ad_price=835.00&utm_campaign=SE%20-%20PMax%20-%20Index&utm_medium=cpc&utm_source=google&gad_source=1&gad_campaignid=20476406562&gbraid=0AAAAApd6hTvfHEJrMWcmR7du_9sVTZS-V&gclid=Cj0KCQjwkMjOBhC5ARIsADIdb3eQCa1P0b_-cKgyI5Ga7iQ3QjcYh9Mfu61z7CRjk3LZC3M4fQXJMzgaAih5EALw_wcB",
-            "https://files.refurbed.com/pi/apple-pencil-2-gen-1607959758.jpg?t=fitdesign&h=600&w=800&t=convert&f=webp",
+            "https://files.refurbed.com/pi/apple-pencil-2-gen-1690279641.jpg",
             false,
             "Prylar",
             "835", 
@@ -93,6 +104,10 @@ const allItems =
     ]
 
 ];
+
+
+
+
 
 function filterCategories(cat){
     let a = document.getElementById("active-categories");
