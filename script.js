@@ -56,8 +56,8 @@ const allItems =
             "https://media.enad.io/20dccf88-6cf1-4912-a8a3-40dbcf6e8e0f/79397_1.jpg?width=1200",
             false,
             "Beredskap",
-            "449",
-            "499"
+            "499",
+            "449"
         ],
         [
             "Vattendunkar 25L",
@@ -76,8 +76,8 @@ const allItems =
             "https://03.cdn37.se/3OL/images/2.609287/under-armour-keps-launch-adjustable.jpeg",
             false,
             "Kläder",
-            "209", 
-"349"
+            "349", 
+"209"
         ],
 
 [
